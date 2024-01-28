@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
   console.log('count', count)
   return (
-    <AppProvider>
+    <AppProvider >
       <AppRouter></AppRouter>
     </AppProvider>
   )

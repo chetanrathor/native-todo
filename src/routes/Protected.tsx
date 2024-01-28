@@ -1,19 +1,21 @@
+import HomeRoutes from 'features/Home/Routes'
 import React from 'react'
+import { Outlet, RouteObject } from 'react-router-dom'
 
 const Application = () => {
     return (
-        <div>Protected</div>
+        <Outlet></Outlet>
     )
 }
 
-export const protectedRoutes = [
+export const protectedRoutes: RouteObject[] = [
     {
         path: '',
         element: <Application></Application>,
         children: [
             {
                 path: '',
-                element: <>Dashboard</>
+                element: <HomeRoutes />
             }
         ]
     }
