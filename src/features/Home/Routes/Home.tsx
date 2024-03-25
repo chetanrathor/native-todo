@@ -1,6 +1,5 @@
 import { Grid, TextField, Typography } from '@mui/material'
 import { ConstantStrings } from 'constants/strings/strings'
-import React from 'react'
 import Task from 'shared/components/Task'
 
 const typography = {

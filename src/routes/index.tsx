@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { useRoutes } from 'react-router-dom'
 import { protectedRoutes } from './Protected'
 import { publicRoutes } from './PublicRoutes'
-import { useRoutes } from 'react-router-dom'
 
 const AppRouter = () => {
-    const [isAuthenticate, setIsAuthenticate] = useState(true)
+    const [isAuthenticate] = useState(true)
     console.log('first', isAuthenticate)
     const routes = isAuthenticate ? protectedRoutes : publicRoutes
     const children = useRoutes([...routes])

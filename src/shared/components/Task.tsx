@@ -1,7 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material'
 import { ConstantStrings } from 'constants/strings/strings'
 import moment from 'moment'
-import React from 'react'
 interface Properties {
     title: string,
     priority: 'High Priority' | 'Low',

@@ -9,4 +9,3 @@ export type ApiCallOptions<P = {}, D = {}> = {
     data?: D
 }
 
-export type ApiResponse<T> = {}
